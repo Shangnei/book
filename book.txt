@@ -1,0 +1,2 @@
+HAL_GetTick(void)                                获取当前的uwTick
+_week HAL_Delay( uint32_t )                      系统级延时
