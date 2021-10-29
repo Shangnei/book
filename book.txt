@@ -1,2 +1,33 @@
-HAL_GetTick(void)                                获取当前的uwTick
-_week HAL_Delay( uint32_t )                      系统级延时
+HAL_GetTick()                                                            获取当前的uwTick
+_week HAL_Delay()                                                        系统级延时
+HAL_GPIO_TogglePin()                                                     电平翻转
+𝑓 =𝐻𝑧 / (HZ+ 1) ∗ (4999 + 1)= 2𝐻z                                        当前Hz计算
+HAL_TIM_IRQHandler(TIM_HandleTypeDef *htim)                              配置tim中断
+_weak void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)        定时器中断回调函数
+ HAL_TIM_Base_Start(TIM_HandleTypeDef *htim)                             定时器开始工作不用开始中断
+ HAL_TIM_Base_Start_IT(TIM_HandleTypeDef *htim)                          开定时器开中断
+ 𝑃 =𝑇𝐼𝑀𝑥𝐶𝐶𝑅𝑥 − 1 / 𝑇𝐼𝑀𝑥𝐴𝑅𝑅 ∗ 100％                                      pwm比较值比他高1 else 0
+ HAL_TIM_PWM_Start()                                                     pwm使能函数
+__HAL_TIM_SetCompare()                                                   pwm赋值
+HAL_GPIO_ReadPin()                                                       读取io口电平
+HAL_ADC_ConfigChannel()                                                  ADC的配置
+HAL_ADC_Start()                                                          ADC开始
+HAL_ADC_PollForConversion()                                              等待adc转换结束
+HAL_ADC_GetValue()                                                       ADC获取值
+HAL_UART_Transmit()                                                      串口发送函数
+HAL_FLASHEx_Erase()                                                      擦除指定的 flash 页面
+HAL_FLASH_Program()                                                      以指定的方式，向 flash 中的一页写入数据
+HAL_FLASH_Unlock()                                                       为 flash 解锁，使用户可以修改 flash 内容
+HAL_FLASH_Lock(void)                                                     为 flash 加锁，后续操作时只有先解锁才能对 flash 内容进行修改
+HAL_I2C_Mem_Read()                                                       从 I2C 设备的寄存器读取数据
+HAL_I2C_Mem_Write()                                                      往 I2C 设备的寄存器写入数据
+HAL_I2C_Master_Transmit()                                                向某个 I2C 设备传输数据
+HAL_SPI_TransmitReceive()                                                通过 SPI 进行主机和从机的通信
+HAL_CAN_AddTXMessage()                                                   将一段数据通过 CAN 总线发送
+HAL_CAN_RxFifo0MsgPendingCallback()                                      can接收中断
+HAL_CAN_GetRxMessage()                                                   接收 CAN 总线上发送来的数据
+vTaskNotifyGiveFromISR()                                                 从中断处理函数中发出一个任务通知，唤醒等待中的任务
+xTaskGetHandle()                                                         获取任务句柄
+pcTaskGetName()                                                          获取任务名称
+ulTaskNotifyTake()                                                       接收任务通知，唤醒休眠任务
+𝑢(𝑘) = 𝐾𝑝 ∗ 𝑒(𝑘) + 𝐾𝑖 ∗ ∑𝑒(𝑖)+ 𝐾𝑑 ∗ [𝑒(𝑘) − 𝑒(𝑘 − 1)]      position      𝛥𝑢(𝑘) = 𝐾𝑝 ∗ [𝑒(𝑘) − 𝑒(𝑘 − 1)] + 𝐾𝑖 ∗ 𝑒(𝑘) + 𝐾𝑑 ∗ [𝑒(𝑘) − 2 ∗ 𝑒(𝑘 − 1) + 𝑒(𝑘 − 2)]     increment
