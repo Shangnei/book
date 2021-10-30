@@ -31,3 +31,5 @@ xTaskGetHandle()                                                         获取�
 pcTaskGetName()                                                          获取任务名称
 ulTaskNotifyTake()                                                       接收任务通知，唤醒休眠任务
 𝑢(𝑘) = 𝐾𝑝 ∗ 𝑒(𝑘) + 𝐾𝑖 ∗ ∑𝑒(𝑖)+ 𝐾𝑑 ∗ [𝑒(𝑘) − 𝑒(𝑘 − 1)]      position      𝛥𝑢(𝑘) = 𝐾𝑝 ∗ [𝑒(𝑘) − 𝑒(𝑘 − 1)] + 𝐾𝑖 ∗ 𝑒(𝑘) + 𝐾𝑑 ∗ [𝑒(𝑘) − 2 ∗ 𝑒(𝑘 − 1) + 𝑒(𝑘 − 2)]     increment
+SPI1_DMA_enable()                                                        开启 SPI1 的 DMA 传输
+
