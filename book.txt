@@ -23,6 +23,7 @@ HAL_I2C_Mem_Read()                                                       从 I2C
 HAL_I2C_Mem_Write()                                                      往 I2C 设备的寄存器写入数据
 HAL_I2C_Master_Transmit()                                                向某个 I2C 设备传输数据
 HAL_SPI_TransmitReceive()                                                通过 SPI 进行主机和从机的通信
+HAL_CAN_Start()                                                          开始can
 HAL_CAN_AddTXMessage()                                                   将一段数据通过 CAN 总线发送
 HAL_CAN_RxFifo0MsgPendingCallback()                                      can接收中断
 HAL_CAN_GetRxMessage()                                                   接收 CAN 总线上发送来的数据
